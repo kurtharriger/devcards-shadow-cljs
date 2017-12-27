@@ -1,3 +1,7 @@
 resources/public/js/compiled/
 target/
 figwheel_server.log
+public/js/
+.lein-repl-history
+.nrepl-port
+node_modules/

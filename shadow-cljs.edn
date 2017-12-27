@@ -1,0 +1,24 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [
+    [devcards "0.2.4"]
+    [sablono "0.8.1"]
+ ]
+
+ :builds
+ {:app
+  {:target :browser
+   :output-dir "public/js"
+   :asset-path "/js"
+
+   :modules
+   {:main {:entries [devcards-demo.core]}}
+
+   :devtools
+   {:http-root "public"
+    :http-port 4001
+    }
+   }}}
