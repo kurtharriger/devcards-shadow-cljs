@@ -9,4 +9,7 @@
   (sab/html [:div
              [:h1 "This is your first devcard!"]]))
 
-;;(dc/start-devcard-ui!)
+(goog-define ^boolean start-devcards? false)
+(when start-devcards? 
+  (println "Starting devcards")
+  (dc/start-devcard-ui!))

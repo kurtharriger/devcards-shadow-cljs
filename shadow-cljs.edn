@@ -17,6 +17,10 @@
    :modules
    {:main {:entries [devcards-demo.core]}}
 
+   :compiler-options {
+    :closure-defines  {devcards-demo.core.start-devcards? true}
+   }
+
    :devtools
    {:http-root "public"
     :http-port 4001
