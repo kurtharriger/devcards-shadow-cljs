@@ -24,5 +24,6 @@
    :devtools
    {:http-root "public"
     :http-port 4001
+    :preloads [devcards.core]
     }
    }}}
